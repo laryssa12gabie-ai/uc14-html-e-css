@@ -1,0 +1,53 @@
+:root{
+    --cor-primaria:rgb(58, 113, 242);
+   --cor-secundaria:rgb(89, 127, 214);
+      --cor-fundo:rgb(141, 170, 237);
+         --cor-texto:rgb(3, 24, 71);
+            --cor-branca:rgb(234, 236, 239);
+
+            --fonte-principal:Arial,sans-serif;
+
+            --borda-radius:10xp;
+            --sombra:0 04px 10px;
+}
+
+body{
+margin: 0;
+padding: 0;
+font-family: var(--fonte-principal);
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+caixa{
+    background-color: var(--cor-branca);
+color: white;
+border: none;
+padding: 30px;
+border-radius: var(--borda-radius);
+box-shadow: var(--sombra);
+text-align: center;
+width: 300px;
+}
+
+h1{
+    color: var(--cor-primaria);
+}
+
+button{
+    background-color: var(--cor-primaria);
+color: white;
+border: none
+padding:10px 20px ;
+border-radius: var(--borda-radius)
+cursor:pointer;
+
+}
+
+button:hover{
+    background-color: var(--cor-secundaria);
+}
