@@ -1,0 +1,19 @@
+button{
+    background-color: blue;
+    color: aqua;
+    border: none;
+padding: 15px 35px;
+border-radius: 25px;
+font-size: 19px;
+
+}
+
+
+
+
+
+
+
+button {
+    animation: moverBotao 5s forwards;
+}
