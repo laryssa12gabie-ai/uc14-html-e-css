@@ -1,0 +1,313 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+--fundo: #f4f8ff;
+--texto: #172554;
+--azul: #2563eb;
+--azul-escuro: #1e40af;
+--cartao: #ffffff;
+--borda: #dbeafe;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: var(--fundo);
+color: var(--texto);
+line-height: 1.6;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+a {
+color: var(--azul);
+text-decoration: none;
+}
+
+a:hover {
+color: var(--azul-escuro);
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+outline: 3px solid #60a5fa;
+outline-offset: 3px;
+}
+
+header {
+background-color: var(--cartao);
+border-bottom: 1px solid var(--borda);
+position: sticky;
+top: 0;
+z-index: 10;
+}
+
+.navbar {
+max-width: 1100px;
+margin: auto;
+padding: 18px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+}
+
+.logo {
+font-size: 22px;
+font-weight: bold;
+}
+
+.menu {
+display: flex;
+list-style: none;
+gap: 18px;
+}
+
+.menu a {
+color: var(--texto);
+}
+
+.menu-btn {
+display: none;
+background: none;
+border: none;
+font-size: 25px;
+cursor: pointer;
+color: var(--texto);
+}
+
+.tema-btn {
+padding: 8px 12px;
+background-color: var(--azul);
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.inicio {
+max-width: 1100px;
+margin: auto;
+padding: 90px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 40px;
+}
+
+.inicio-texto {
+max-width: 600px;
+}
+
+.inicio-texto h1 {
+font-size: 42px;
+margin-bottom: 10px;
+}
+
+.inicio-texto h2 {
+color: var(--azul);
+margin-bottom: 15px;
+}
+
+.inicio-texto p {
+margin-bottom: 20px;
+}
+
+.botao {
+display: inline-block;
+background-color: var(--azul);
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 15px;
+}
+
+.botao:hover {
+background-color: var(--azul-escuro);
+color: white;
+}
+
+/* Foto de perfil */
+.avatar {
+width: 230px;
+height: 230px;
+flex-shrink: 0;
+border-radius: 50%;
+overflow: hidden;
+border: 5px solid var(--azul);
+background-color: var(--borda);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    display: block;
+    transform: translateY(10px);
+}
+
+.secao {
+max-width: 1100px;
+margin: auto;
+padding: 60px 20px;
+}
+
+.secao h2 {
+font-size: 30px;
+margin-bottom: 25px;
+color: var(--azul);
+}
+
+.secao p {
+margin-bottom: 15px;
+}
+
+.habilidades {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+}
+
+.habilidade, .projeto {
+background-color: var(--cartao);
+padding: 25px;
+border: 1px solid var(--borda);
+border-radius: 12px;
+}
+
+.habilidade h3, .projeto h3 {
+margin-bottom: 10px;
+color: var(--azul);
+}
+
+.projetos {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.projeto span {
+display: inline-block;
+margin-top: 10px;
+color: var(--azul);
+font-size: 14px;
+font-weight: bold;
+}
+
+form {
+max-width: 600px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+form input:not([type="checkbox"]), form textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #93c5fd;
+border-radius: 8px;
+background-color: var(--cartao);
+color: var(--texto);
+font: inherit;
+}
+
+.consentimento {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+margin: 10px 0;
+}
+
+.consentimento input {
+margin-top: 6px;
+}
+
+footer {
+background-color: var(--cartao);
+border-top: 1px solid var(--borda);
+padding: 25px 20px;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 8px;
+}
+
+/* Tema escuro */
+body.escuro {
+--fundo: #0f172a;
+--texto: #e2e8f0;
+--azul: #60a5fa;
+--azul-escuro: #93c5fd;
+--cartao: #1e293b;
+--borda: #334155;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 800px) {
+.navbar {
+    flex-wrap: wrap;
+}
+
+.menu-btn {
+    display: block;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    order: 3;
+}
+
+.menu.aberto {
+    display: flex;
+}
+
+.inicio {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.inicio-texto h1 {
+    font-size: 32px;
+}
+
+.avatar {
+    width: 190px;
+    height: 190px;
+}
+
+.projetos {
+    grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 500px) {
+.habilidades {
+    grid-template-columns: 1fr;
+}
+
+.tema-btn {
+    font-size: 12px;
+}
+
+.secao h2 {
+    font-size: 26px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+html {
+    scroll-behavior: auto;
+}
+}

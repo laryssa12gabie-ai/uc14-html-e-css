@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio | Laryssa</title>
+<link rel="stylesheet" href="porti.css">
+<script src="porti.js" defer></script>
+</head>
+<body id="topo">
+
+<header>
+<nav class="navbar">
+<a href="#inicio" class="logo">laryssa.dev</a>
+
+<button class="menu-btn" id="menu-btn" aria-label="Abrir menu">
+☰
+</button>
+
+<ul class="menu" id="menu">
+<li><a href="#inicio">Início</a></li>
+<li><a href="#sobre">Sobre mim</a></li>
+<li><a href="#habilidades">Habilidades</a></li>
+<li><a href="#projetos">Projetos</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+
+<button id="tema-btn" class="tema-btn">Mudar tema</button>
+</nav>
+</header>
+
+<main>
+<section id="inicio" class="inicio">
+<div class="inicio-texto">
+<p id="saudacao">Olá!</p>
+<h1>Oi, eu sou a Laryssa!</h1>
+<h2>Estudante de tecnologia</h2>
+
+<p>
+    Estou aprendendo a criar sites e descobrir
+    tudo o que dá para fazer com a programação.
+    Esse é meu portfólio, onde mostro um pouco
+    do que estou aprendendo.
+</p>
+
+<a href="#projetos" class="botao">Ver meus projetos</a>
+</div>
+
+<div class="avatar">
+<img src="WhatsApp Image 2026-10-23 at 17.13.33.jpeg" alt="Minha foto de perfil">
+</div>
+</section>
+
+<section id="sobre" class="secao">
+<h2>Sobre mim</h2>
+
+<p>
+Meu nome é Laryssa e sou estudante de tecnologia.
+Ainda estou no começo da minha jornada na programação,
+mas gosto de aprender coisas novas e colocar em
+prática o que vejo nas aulas.
+</p>
+
+<p>
+Quero continuar melhorando minhas habilidades,
+criar projetos diferentes e aprender mais sobre
+desenvolvimento de sites.
+</p>
+</section>
+
+<section id="habilidades" class="secao">
+<h2>Minhas habilidades</h2>
+
+<div class="habilidades">
+<div class="habilidade">
+    <h3>HTML</h3>
+    <p>Uso para organizar o conteúdo das páginas.</p>
+</div>
+
+<div class="habilidade">
+    <h3>CSS</h3>
+    <p>Uso para estilizar os sites e deixar tudo organizado.</p>
+</div>
+
+<div class="habilidade">
+    <h3>JavaScript</h3>
+    <p>Estou aprendendo a adicionar interações aos sites.</p>
+</div>
+
+<div class="habilidade">
+    <h3>Responsividade</h3>
+    <p>Estou aprendendo a adaptar sites para diferentes telas.</p>
+</div>
+</div>
+</section>
+
+<section id="projetos" class="secao">
+<h2>Meus projetos</h2>
+
+<div class="projetos">
+<article class="projeto">
+    <h3>Bella Mesa</h3>
+    <p>
+        Uma página para um restaurante, feita para
+        apresentar o local e seus pratos.
+    </p>
+    <span>HTML e CSS</span>
+</article>
+
+<article class="projeto">
+    <h3>Como está o clima?</h3>
+    <p>
+        Um programa que verifica a temperatura
+        e mostra se está frio, agradável ou quente.
+    </p>
+    <span>HTML, CSS e JavaScript</span>
+</article>
+
+<article class="projeto">
+    <h3>Calculadora de desconto</h3>
+    <p>
+        Um programa que calcula o preço de um
+        produto depois de aplicar um desconto.
+    </p>
+    <span>JavaScript</span>
+</article>
+</div>
+</section>
+
+<section id="contato" class="secao">
+<h2>Entre em contato</h2>
+
+<p>Preencha o formulário para deixar uma mensagem.</p>
+
+<form id="form-contato">
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" required>
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+<label class="consentimento">
+    <input type="checkbox" id="consentimento" required>
+    Concordo em fornecer os dados preenchidos para contato.
+</label>
+
+<button type="submit" class="botao">Enviar mensagem</button>
+<p id="resposta-form" aria-live="polite"></p>
+</form>
+</section>
+</main>
+
+<footer>
+<p>Feito por Laryssa | <span id="ano"></span></p>
+<a href="#topo">Voltar ao topo</a>
+</footer>
+
+</body>
+</html>
